@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<style>
+   *{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 40vw;
+    margin: 40px auto;
+    border:2px solid black;
+    border-radius:5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+#screen{
+    display:block;
+    font-size:45px;
+    margin:10px auto;
+}
+table{
+    border:10px solid grey;
+    margin:10px auto;
+    width:80%;
+    
+}
+td{
+    height:60px;
+    width:70px;
+    border:2px solid gray;
+    border-radius:10px;
+    transition:100ms;
+    box-shadow:1px 0px 3px rgb(104,104,104);
+    
+}
+button{
+    font-size:35px;
+    height:100%;
+    width:100%;
+    border:none;
+     border-radius:10px;
+     cursor:pointer;
+}
+
+td:active{
+    transform: scale(0.8);
+}
+</style>
+
+
+
+    <body>
+        <div class="container">
+            <h1>Calculator</h1>
+            <input type="text" id="screen">
+            <table cellspacing="15">
+                <tbody>
+                   <tr>
+             <td><button style="background-color:lightblue">C</button></td>
+             <td><button>%</button></td>
+             <td><button>*</button></td>
+             <td><button>-</button></td>
+                    </tr>
+                     <tr>
+             <td><button>7</button></td>
+             <td><button>8</button></td>
+             <td><button>9</button></td>
+             <td><button>%</button></td>
+                    </tr>
+                     <tr>
+             <td><button>4</button></td>
+             <td><button>5</button></td>
+             <td><button>6</button></td>
+             <td><button>**</button></td>
+                    </tr>
+                     <tr>
+             <td><button>1</button></td>
+             <td><button>2</button></td>
+             <td><button>3</button></td>
+             <td rowspan="2"><button style="background-color:pink">+</button></td>
+                    </tr>
+                     <tr>
+             <td><button>0</button></td>
+             <td><button>.</button></td>
+             <td><button>=</button></td>
+             
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
